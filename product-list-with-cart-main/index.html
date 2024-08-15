@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dessert.css">
+</head>
+<body>
+    <main>
+      <section class="dessert-container">
+        <h1>Desserts</h1>
+        <div id="dessert-menu">
+          <!-- dessert items come here -->
+        </div>
+      </section>
+      
+      <div id="cart">
+        <h2>Your Cart (<span id="cart-count">0</span>)</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p>
+        <button id="confirm-order-btn" disabled>Confirm Order</button>
+      </div>
+
+      <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <i class="fa-regular fa-circle-check check-icon"></i>
+                <h2>Order Confirmed</h2>
+                <p>We hope you enjoy your food!</p>
+            </div>
+            <div id="orderSummary"></div>
+            <div class="order-total"></div>
+            <button id="startNewOrderBtn" class="start-new-order">Start New Order</button>
+        </div>
+    </div>
+    </main>
+    <script src="dessert.js"></script>
+</body>
+</html>
